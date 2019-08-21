@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>0w1 CTFTrain</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="http://106.13.95.208/themes/core/static/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/bootstrap.css">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/fontawesome-fonts.css" type="text/css">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/fontawesome-all.css" type="text/css">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/font.css" type="text/css">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/jumbotron.css">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/sticky-footer.css">
+	<link rel="stylesheet" href="0w1%20CTFTrain_files/base.css">
+	
+
+	
+	<link rel="stylesheet" type="text/css" href="0w1%20CTFTrain_files/user.css">
+	<script src="0w1%20CTFTrain_files/promise-polyfill.js"></script>
+	<script src="0w1%20CTFTrain_files/eventsource.js"></script>
+	<script src="0w1%20CTFTrain_files/fetch.js"></script>
+	<script src="0w1%20CTFTrain_files/CTFd.js"></script>
+	<script src="0w1%20CTFTrain_files/moment.js"></script>
+	<script src="0w1%20CTFTrain_files/nunjucks.js"></script>
+	<script type="text/javascript">
+		var script_root = "";
+		var csrf_nonce = "b03638c93fb3831138d3f513e583d5998db846cf98e007db6e96c90830874abf";
+		var user_mode = "users";
+		var ctf_start = null;
+		var ctf_end = null;
+		CTFd.options.urlRoot = script_root;
+		CTFd.options.csrfNonce = csrf_nonce;
+		CTFd.options.start = ctf_start;
+		CTFd.options.end = ctf_end;
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="http://106.13.95.208/" class="navbar-brand">
+				
+				<img class="img-responsive ctf_logo" src="0w1%20CTFTrain_files/logo_white.jpg" alt="0w1 CTFTrain" height="25">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+
+					<li class="nav-item">
+						<a class="nav-link" href="http://106.13.95.208/notifications">Notifications</a>
+					</li>
+					
+						<li class="nav-item">
+							<a class="nav-link" href="http://106.13.95.208/users">Users</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="http://106.13.95.208/scoreboard">Scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="http://106.13.95.208/challenges">Challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="http://106.13.95.208/register">Register</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-none d-md-block d-lg-block">|</a>
+							</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="http://106.13.95.208/login">Login</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+<div class="jumbotron">
+	<div class="container">
+		<h1>Login</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			
+
+			<a class="btn btn-secondary btn-lg btn-block" href="http://106.13.95.208/oauth">Login with Major
+				League Cyber</a>
+
+			<hr>
+
+			<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal" action="login_check.php">
+				<div class="form-group">
+					<label for="name-input">
+						User Name or Email
+					</label>
+					<input class="form-control" type="text" name="name" id="name-input">
+				</div>
+				<div class="form-group">
+					<label for="password-input">
+						Password
+					</label>
+					<input class="form-control" type="password" name="password" id="password-input">
+				</div>
+				<div class="row pt-3">
+					<div class="col-md-6">
+						<a class="float-left align-text-to-button" href="http://106.13.95.208/reset_password">
+							Forgot your password?
+						</a>
+					</div>
+					<div class="col-md-6">
+						<button type="submit" tabindex="0" class="btn btn-md btn-primary btn-outlined float-right">
+							Submit
+						</button>
+					</div>
+				</div>
+				<input type="hidden" name="nonce" value="b03638c93fb3831138d3f513e583d5998db846cf98e007db6e96c90830874abf">
+			</form>
+		</div>
+	</div>
+</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io/">
+				<small class="text-muted">Powered by CTFd</small>
+			</a>
+		</div>
+	</footer>
+
+	<script src="0w1%20CTFTrain_files/jquery.js"></script>
+	<script src="0w1%20CTFTrain_files/markdown-it.js"></script>
+	<script src="0w1%20CTFTrain_files/bootstrap.js"></script>
+	<script src="0w1%20CTFTrain_files/howler.js"></script>
+	<script src="0w1%20CTFTrain_files/window-controller.js"></script>
+	<script src="0w1%20CTFTrain_files/style.js"></script>
+	<script src="0w1%20CTFTrain_files/utils.js"></script>
+	<script src="0w1%20CTFTrain_files/ezq.js"></script>
+	<script src="0w1%20CTFTrain_files/events.js"></script>
+	
+
+
+	
+
+</body></html>

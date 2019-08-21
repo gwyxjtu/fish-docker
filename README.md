@@ -18,7 +18,7 @@
 ## 密码存放
 
 ```
-cat save/mailqq.txt
+cat save/0w1_lalala.txt
 ```
 
 ## 提醒

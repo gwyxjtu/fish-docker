@@ -1,4 +1,4 @@
-FROM ctftraining/base_image_nginx_mysql_php_73
+FROM daocloud.io/wrfly/nginx-php-redis:master-be0d38e
 
 LABEL Author="galaxy"
 
